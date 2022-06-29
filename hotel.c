@@ -23,6 +23,14 @@ new_line()
   printf("4. panir masala   -------->>   Price:  120");
   new_line();
  }
+ int quantity(){
+ int quty;
+ new_line();
+ printf("Enter quantity");
+ new_line();
+ scanf("%d",&quty);
+ return quty;
+ }
 
  list_of_Rotis(){
   new_line();
@@ -38,13 +46,12 @@ new_line()
  new_line();
  }
 int main()
-{   int choice,suggest,sum=0,total;
+{   int choice,suggest,sum=0,qunt;
+    char roti[70];
     printf("Welcome to Restaurant. Please Order Something...");
     select_choice();
     list_of_vegitables();
     scanf("%d", &choice);
-    list_of_Rotis();
-    scanf("%d",&suggest);
     switch(choice){
      case 1:
         sum = sum + 60;
@@ -54,11 +61,45 @@ int main()
         break;
      case 3:
         sum = sum + 100;
+        break;
      case 4:
         sum = sum + 120;
+        break;
     default:
        printf("Wrong choice, Please select right one.");
     }
+    select_choice();
+    list_of_Rotis();
+    scanf("%d",&suggest);
+    qunt = quantity();
+    new_line();
+    switch(suggest){
+     case 1:
+        sum = sum + 7*qunt;
+        char roti[] = "tava roti";
+        break;
+     case 2:
+        sum = sum + 10*qunt;
+        char roti[] = "tandoori roti";
+        break;
+     case 3:
+        sum = sum + 15*qunt;
+        char roti[] = "Maaka roti";
+        break;
+     case 4:
+        sum = sum + 20*qunt;
+        char roti[] = "Paratha";
+        break;
+    case 5:
+        sum = sum + 30*qunt;
+        char roti[] = "Puran Poli";
+        break;
+    default:
+       printf("Wrong choice, Please select right one.");
+    }
+    printf("Your bill, Sir");
+    new_line();
+    printf("%s * %d \n",roti,qunt);
     printf("%d total", sum);
 }
 
