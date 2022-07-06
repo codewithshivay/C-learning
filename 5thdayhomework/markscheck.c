@@ -12,10 +12,12 @@ int main()
               if(x>=45)
                 printf("Your are passs in 2nd divisioin");
               else
-               if(x<=33)
+               if(x>=33)
+                 printf("Third division");
+                else
                    printf("your are fail");
-            }
 
+            }
 
     return 0;
 }
