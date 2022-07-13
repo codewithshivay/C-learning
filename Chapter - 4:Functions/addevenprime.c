@@ -8,10 +8,10 @@ add()
 }
 is_even()
 {
-  int x;
+  int a;
   printf("\n\n\nEnter a Number to check Even or add\n");
-  scanf("%d",x);
-  if(x%2==0)
+  scanf("%d",&a);
+  if(a%2==0)
     printf("Even Number");
   else
     printf("Odd Number");
