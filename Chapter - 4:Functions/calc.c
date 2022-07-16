@@ -21,16 +21,11 @@ int main()
    int a,b,choice;
   do
  {
-   printf("\n1.Addition \n2.Substraction \n3.Multiplication \n4.Division\n\n");
-   printf("\nEnter your Choice\n");
+   printf("\n\nEnter your Choice");
+   printf("\n1.Addition \n2.Substraction \n3.Multiplication \n4.Division\n");
    scanf("%d",&choice);
    if(choice<=5)
   {
-    if(choice == 5)
-    {
-      printf("Please select right Choice");
-      break;
-    }
     printf("Enter two Number\n");
     scanf("%d%d",&a,&b);
      switch(choice)
@@ -48,6 +43,11 @@ int main()
         printf("%d",divi(a,b));
         break;
      }
+  }
+  else
+  {
+      printf("Please select right Choice");
+      break;
   }
 
  } while(1);
