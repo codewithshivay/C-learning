@@ -1,5 +1,5 @@
 //Program to print a table
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
  int num,i,j;
@@ -8,7 +8,7 @@ int main()
   for(i=1; i<=10 ; i++)
    {
        j=num*i;
-       printf("%d\n",j);ss
+       printf("%d\n",j);
    }
 
 return 0;
@@ -27,7 +27,7 @@ int main()
     printf("the sum of of first %d Number is : %d\n",num,j);
 
 return 0;
-}
+}*/
 
 //Program to print sum of even number
 #include <stdio.h>
