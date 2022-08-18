@@ -16,5 +16,4 @@ int main()
     scanf("%d",&a);
     a = natural(a);
     printf("the sum is : %d",a);
-
 }
