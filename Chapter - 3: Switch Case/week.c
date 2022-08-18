@@ -29,7 +29,7 @@ int main() {
           printf("Sunday");
           break;
          default :
-          printf("Invalid Choice");
+          printf("Invalid Choice Please select form 1 to 7");
      }
 
     return 0;
