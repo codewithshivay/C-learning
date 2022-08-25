@@ -1,4 +1,4 @@
-//Write a program to sort elements of an array of size 10. Take array values from the user
+//Write a program to sort elements of an array...!!
 #include <stdio.h>
 int main()
 {
@@ -6,4 +6,7 @@ int main()
   printf("Enter 10 array element :\n");
   for(i=0; i<10; i++)
     scanf("%d",&a[i]);
+
+
+  return 0;
 }
