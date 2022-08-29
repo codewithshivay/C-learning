@@ -1,40 +1,39 @@
-// Write program to count frequency of each element in an array
+//frequency check element program..
 #include <stdio.h>
-
-int valueinarray(int val, int arr[])
-{
-    int i;
-    for(i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
+int Is_present(int a, int b[])
+ {
+     int i;
+    for(i=0; i<10; i++)
     {
-        if(arr[i] == val)
-            return 1;
+        if(b[i] == a)
+        {
+          return 1;
+        }
     }
     return 0;
 }
 
 int main()
 {
-    int a[6],b[6],i,j,c=0;
-    printf("Enter array element\n");
-
-    for(i=0; i<6; i++)
-     scanf("%d",&a[i]);
-
-    printf("%d", valueinarray(2, a));
-
-    /*or(i=0; i<6; i++)
-      b[i] = a[i];
-
-    for(i=0; i<6; i++)
+    int b[]={2,2,3,4,4,6,7,7,8,7},c[100];
+    int i,j=0,temp=0;
+    for(i=0; i<10; i++)
+    {
+       if(Is_present(b[i],c)==0)
+       {
+          c[j] = b[i];
+          j++;
+       }
+    }
+     for(j=0; j<sizeof(c[j]); j++)
      {
-       for(j=0; i<6; j++)
-        {
-         if(a[i] == b[j])
-           c++;
-        }
-      printf("\n%d is %d times",a[i],c);
-       c=0;
+         for(i=0; i<10; i++)
+         {
+             if(c[j] == b[i])
+               temp++;
+         }
+         printf("\n%d occurs %d times",c[j],temp);
      }
-    */
+
     return 0;
 }
