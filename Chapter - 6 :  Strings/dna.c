@@ -13,10 +13,10 @@ int compute(char *a , char *b)
              {
                 c++;
              }
-            else
+           /* else
              {
-                break;
-             }
+                f=1;
+             }*/
         }
          return c;
     }
