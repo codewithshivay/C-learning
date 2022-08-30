@@ -3,8 +3,8 @@
 
 int power(int base, int power)
 {
-  int m = 1;
-  for(int i=1; i<=power; i++)
+  int i, m = 1;
+  for(i=1; i<=power; i++)
   {
    m = m * base;
   }
