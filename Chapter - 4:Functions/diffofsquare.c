@@ -12,6 +12,7 @@ int square_of_sum(int a)
     }
     return s*s;
 }
+
 int sum_of_squares(int a)
 {
     int i,s=0,t;
